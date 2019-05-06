@@ -6,9 +6,10 @@ import AddNinja from './AddNinja';
 class App extends Component {
   state = {
     ninjas : [
-      { name: "TarPatri", age: 35, belt: "green", id: 0 },
-      { name: "Samoosa", age: 33, belt: "red", id: 1 },
-      { name: "Chutri", age: 34, belt: "orange", id: 2 }
+      { name: "Splinter", age: 35, belt: "green", id: 0 },
+      { name: "Donatello", age: 33, belt: "red", id: 1 },
+      { name: "Shredder", age: 34, belt: "orange", id: 2 },
+      { name: "Yoshi", age: 24, belt: "orange", id: 3 }
     ]
   }
 
@@ -41,9 +42,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1>My first react app</h1>
-        <p>Welcome</p>
+      <div className="App" >
+        <h1>ReactJS Demo</h1>
+        <p>Innovation Day</p>
         <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas} />
         <AddNinja addNinja={this.addNinja} />
       </div>
